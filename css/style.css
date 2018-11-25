@@ -1,3 +1,6 @@
+h2{
+	font-size:3rem;
+}
 section.section-gap{
 	padding: 60px 0; 
 }
@@ -9,6 +12,95 @@ section.section-gap{
 	margin-top:90px;
 }
 
+/*navigation*/
+.main-nav{
+	 background-color: rgba(26, 40, 87, 0.9);
+    color: rgb(0, 0, 0);
+}
+.fixed-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgba(26, 40, 87, 0.9);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0;
+    z-index: 2;
+}
+a.nav-link{
+	color:#fff !important;
+}
+
+.btn.btn-warning.btn-menu{
+	background:#e8cc00;
+}
+
+li.nav-item{
+	padding: 10px 5px;
+}
+
+a.btn-menu.text-black{color:#000 !important; text-transform: uppercase;}
+/*slider */
+
+.carousel-caption{
+	margin-bottom: 200px;
+}
+.carousel-inner img{
+	opacity: 20;
+}
+
+/* our cause */
+
+section.our_causes{
+	background:#f4f4f4;
+}
+
+section.our_causes h6{
+	color: #005BAA;
+}
+
+.overlay-box {
+    position: relative;
+    width: 100%;
+}
+
+.over-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-box:hover .over-image {
+  opacity: 0.3;
+}
+
+.overlay-box:hover .middle {
+  opacity: 1;
+}
+
+.text a {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px;
+  text-decoration: none;
+}
 /*help for cause*/
 
 section.help_for_cause h2{
@@ -85,7 +177,7 @@ a.read_more{
 	color:#8DC63F;
 }
 
-.social_feed h2, .poll_featured h2, section.announcement h2{
+.social_feed h2, .poll_featured h2, section.announcement h2, section.our_causes h2, section.our_mission h2{
 	margin-bottom:45px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -274,9 +366,15 @@ h5.foot_title{
 	background: #8DC63F;
 	text-transform: uppercase;
 	border:1px solid #8DC63F;
+	/*padding: 20px;*/
+}
+
+button.btn.btn-success.btn-main.btn-big{
+	padding: 20px;
 }
 button.btn.btn-success.btn-main:hover{
 	background: #28a745;
 	text-transform: uppercase;
 	border:1px solid #28a745;
+
 }
