@@ -2,11 +2,63 @@ section.section-gap{
 	padding: 60px 0; 
 }
 
+.pad_fix{
+	padding: 0!important;
+}
 
 
 
+/*social feeds*/
 
+.box_social{
+	background: #fff;
+	min-height: 390px;
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(212,212,212,1);
+-moz-box-shadow: 0px 0px 20px 5px rgba(212,212,212,1);
+box-shadow: 0px 0px 20px 5px rgba(212,212,212,1);
+padding: 5px 0;
+}
 
+.wrap_social_header{
+	border-bottom: 3px solid #FFC107;
+	padding: 10px;
+}
+.wrap_social_header span{
+font-size:1.45em;
+font-weight: bold;
+color:#005BAA;
+}
+
+a.read_more{
+	color:#8DC63F;
+}
+
+.social_feed h2{
+	margin-bottom:45px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #005BAA;
+}
+
+.social_feed .multi_wrap{
+	margin-top: 20px;
+}
+
+.social_feed h2::after {
+	width: 120px;
+height: 6px;
+position: absolute;
+bottom: 20px;
+left: 50%;
+   
+    content: "";
+    background-color: rgb(232, 204, 0);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
 
 /*footer*/
 
@@ -56,6 +108,26 @@ ul.footer-link li a{
 .pad_tp_25{
 	padding-top: 25px;
 }
-h4.foot_title{
+h5.foot_title{
 	margin-top:20px;
+}
+
+.news_letter_part{
+	padding: 10px 0;
+}
+.news_letter_part h5{
+	color:#005BAA;
+	text-transform: uppercase;
+	margin: 7.5px 0;
+	font-weight: bold;
+}
+ button.btn.btn-success.btn-main{
+	background: #8DC63F;
+	text-transform: uppercase;
+	border:1px solid #8DC63F;
+}
+button.btn.btn-success.btn-main:hover{
+	background: #28a745;
+	text-transform: uppercase;
+	border:1px solid #28a745;
 }
