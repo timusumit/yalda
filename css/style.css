@@ -8,6 +8,29 @@ section.section-gap{
 
 
 
+
+
+/*announcement*/
+section.announcement{
+background:#F4F4F4;
+}
+
+
+
+/*advertisement*/
+
+
+section.advertisement{
+	padding: 30px 0; 
+}
+
+section.advertisement h5{
+	font-weight: bold;
+}
+
+
+
+
 /*social feeds*/
 
 .box_social{
@@ -33,7 +56,7 @@ a.read_more{
 	color:#8DC63F;
 }
 
-.social_feed h2{
+.social_feed h2, .poll_featured h2{
 	margin-bottom:45px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -44,8 +67,9 @@ a.read_more{
 	margin-top: 20px;
 }
 
+
 .social_feed h2::after {
-	width: 120px;
+width: 120px;
 height: 6px;
 position: absolute;
 bottom: 20px;
@@ -58,6 +82,102 @@ left: 50%;
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+/* poll featured */
+
+
+.poll_featured .green_box h2{
+	color:#fff;
+}
+
+
+.poll_featured h2::after{
+width: 80px;
+
+height: 6px;
+
+position: absolute;
+
+top: 80px;
+
+left: 70px;   
+    content: "";
+   
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.poll_featured .white_box h2::after{
+	background:#8DC63F;
+}
+.poll_featured .green_box h2::after{
+	
+	background: #FFC107;
+}
+.white_box h5{
+	color:#000;
+	font-weight: bold;
+}
+ul.poll_options{
+	padding: 0;
+
+}
+ul.poll_options li{
+	list-style: none;
+	color: #888 !important;
+}
+
+.poll_featured{
+	background:url('../images/poll_featured.jpg');
+	/*min-height: 715px;*/
+	width: 100%;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.poll_featured .green_box{
+	padding: 30px;
+    background-color: rgba(141, 198, 63, 0.9);
+    color: rgb(255, 255, 255);
+    box-shadow: 7px 5px 40px 10px rgba(0, 0, 0, 0.1);
+    margin:10px;
+
+}
+
+
+.poll_featured .white_box{
+	padding: 30px;
+	margin:10px;
+    background-color: rgba(255, 255, 255, 0.9);
+   /*color: rgb(255, 255, 255);*/
+    box-shadow: 7px 5px 40px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.inner_green_box img{
+	border: 1px solid #666;
+border-radius: 50%;
+padding: 5px;
+}
+
+.inner_green_box .text_wrap{
+	padding:30px 15px;
+}
+
+.inner_green_box .text_wrap::after{
+width: 48px;
+height: 50px;
+position: absolute;
+top: 0;
+right: -75px;
+content: "";
+background-image: url('../images/icon-medal.svg');
+background-size: contain;
+background-repeat: no-repeat;
 }
 
 /*footer*/
