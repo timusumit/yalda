@@ -12,6 +12,23 @@ section.section-gap{
 	margin-top:90px;
 }
 
+/*animation*/
+.delay2{
+	animation-duration: 4s;
+  animation-delay: 0.5s;
+ /* animation-iteration-count: infinite;*/
+}
+.delay3{
+	animation-duration: 5s;
+  animation-delay: 0.5s;
+ /* animation-iteration-count: infinite;*/
+}
+.delay4{
+	animation-duration: 6s;
+  animation-delay: 0.5s;
+ /* animation-iteration-count: infinite;*/
+}
+
 /*navigation*/
 .main-nav{
 	 background-color: rgba(26, 40, 87, 0.9);
@@ -253,11 +270,21 @@ ul.poll_options li{
 }
 
 .poll_featured{
-	background:url('../images/poll_featured.jpg');
-	/*min-height: 715px;*/
+	/*background:url('../images/poll_featured.jpg');
+	min-height: 715px;
 	width: 100%;
 	background-size:cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/poll_featured.jpg");
+	height: 600px; 
+	  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
 }
 
 .poll_featured .green_box{

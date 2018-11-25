@@ -133,15 +133,15 @@
 			</div>
       <div class="row justify-content-md-center">
         <div class="col text-center">
-          <img src="images/mission1.png">
+          <img class="rotateIn delay4" src="images/mission1.png">
           <p class="text-center">Networking with professional, mentors</p>
         </div>
         <div class="col text-center">
-          <img src="images/mission2.png">
+          <img class="rotateIn delay3" src="images/mission2.png">
           <p class="text-center">Positive leadership roles in their universities, countries and on the continent</p>
         </div>
-        <div class="col text-center">
-          <img src="images/mission3.png">
+        <div class="col text-center ">
+          <img class="rotateIn delay2" src="images/mission3.png">
           <p class="text-center">A forum for ground-level, youth based solutions for Africa</p>
         </div>
       </div>
@@ -163,19 +163,19 @@
       </div>
         <div class="row justify-content-md-center">
           <div class="col-lg-4 text-center">
-            <img class="img-fluid" src="images/causes1.png">
+            <img class="img-fluid bounceInUp" src="images/causes1.png">
             <h6 class="text-left">Foster communication and productive collaboration</h6>
           <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum tincidunt.</p>
           
           </div>
            <div class="col-lg-4 text-center">
-            <img class="img-fluid" src="images/causes2.png">
+            <img class="img-fluid bounceInUp" src="images/causes2.png">
                 <h6 class="text-left">Raise awareness among young people</h6>
           <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum tincidunt.</p>
           
           </div>
            <div class="col-lg-4 text-center">
-            <img class="img-fluid" src="images/causes3.png">
+            <img class="img-fluid bounceInUp" src="images/causes3.png">
                 <h6 class="text-left">Facilitate African Development through practicing varous leadership skills</h6>
           <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum tincidunt.</p>
           
@@ -284,7 +284,7 @@
   <section class="poll_featured section-gap">
     <div class="container">
       <div class="row">
-        <div class="col white_box">
+        <div class="col white_box zoomInDown delay4">
           <h2>Quick Poll</h2>
           <h5>Which sector is poised to create more jobs in africa?</h5>
           <p>
@@ -298,9 +298,9 @@
             <button class="btn btn-success btn-main">Submit</button>
           </p>
         </div>
-        <div class="col green_box">
+        <div class="col green_box zoomInDown delay3">
           <h2>Featured</h2>
-          <div class="inner_green_box">
+          <div class="inner_green_box ">
             <h6>Yalda Youth Member of the Month</h6>
             <div class="row">
               <div class="col">
@@ -314,7 +314,7 @@
               </div>
             </div>
           </div>
-            <div class="inner_green_box">
+            <div class="inner_green_box ">
             <h6>Professional Affiliate of the Month</h6>
             <div class="row">
               <div class="col">
@@ -493,6 +493,16 @@
       $(".main-nav").removeClass('fixed-nav');
     }
 
+    if(scroll>=600){
+      $('.rotateIn').addClass('animated');
+    }
+
+    if(scroll>=700){
+      $('.bounceInUp').addClass('animated');
+    }
+if(scroll>=3000){
+  $('.zoomInDown').addClass('animated');
+}
 
 
 }); //missing );
