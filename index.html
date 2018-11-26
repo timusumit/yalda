@@ -137,7 +137,7 @@
           <p class="text-center">Networking with professional, mentors</p>
         </div>
         <div class="col text-center">
-          <img class="rotateIn delay3" src="images/mission2.png">
+          <img class="rotateIn delay3 " src="images/mission2.png">
           <p class="text-center">Positive leadership roles in their universities, countries and on the continent</p>
         </div>
         <div class="col text-center ">
@@ -196,19 +196,19 @@
         <div class="row figures_causes justify-content-md-center ">
           <div class="col-lg-4 text-center">
             
-            <h2 class="text-center">21,000</h2>
+            <h2 class="text-center numscroller" data-min="1" data-max="21000" data-delay="5" data-increment="100"></h2>
           <p class="text-center">Volunteers</p>
           
           </div>
            <div class="col-lg-4 text-center">
             
-                <h2 class="text-center">100+</h2>
+                <h2  class="text-center numscroller" data-min="1" data-max="100" data-delay="5" data-increment="5"></h2>
           <p class="text-center">Projects</p>
           
           </div>
            <div class="col-lg-4 text-center">
            
-                <h2 class="text-center">100+</h2>
+                <h2 class="text-center numscroller" data-min="1" data-max="100" data-delay="5" data-increment="5"></h2>
           <p class="text-center">Successful Implementation</p>
           
           </div>
@@ -217,7 +217,7 @@
 
       <div class="row justify-content-md-center mar-top-90">
         <div class="col text-center">
-        <button class="btn btn-success btn-main btn-big">Donate to Help Our Cause</button>
+        <button class="btn btn-success btn-main btn-big" data-toggle="modal" data-target="#donateCause">Donate to Help Our Cause</button>
       </div>
       </div>
 
@@ -284,7 +284,7 @@
   <section class="poll_featured section-gap">
     <div class="container">
       <div class="row">
-        <div class="col white_box zoomInDown delay4">
+        <div class="col white_box zoomInDown delay4 wow">
           <h2>Quick Poll</h2>
           <h5>Which sector is poised to create more jobs in africa?</h5>
           <p>
@@ -298,7 +298,7 @@
             <button class="btn btn-success btn-main">Submit</button>
           </p>
         </div>
-        <div class="col green_box zoomInDown delay3">
+        <div class="col green_box zoomInDown delay4 wow">
           <h2>Featured</h2>
           <div class="inner_green_box ">
             <h6>Yalda Youth Member of the Month</h6>
@@ -478,8 +478,76 @@
 
     </div>
     </footer>
+    
+    <!-- Modal -->
+<div class="modal fade" id="donateCause" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Donate To help Cause</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg-12">
+            <div class="form-group">
+    <label for="exampleInputEmail1">Full Name</label>
+    <input type="fname" class="form-control" id="exampleInputEmail1" required="required" aria-describedby="fnameHelp" placeholder="Enter Full Name">
+    
+  </div>
+          
+          <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" required="required" aria-describedby="emailHelp" placeholder="Enter email">
+    
+  </div>
+  
+    <div class="form-group">
+    <label for="exampleInputEmail1">Phone Number</label>
+    <input type="number" class="form-control" id="number" aria-describedby="numberHelp" placeholder="Enter Phone Number">
+   
+  </div>
+  
+    <div class="form-group">
+    <label for="exampleInputEmail1"> Amount</label>
+    <div class="input-group">
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="amount" placeholder="Enter Amount">
+    <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+ </div>
+      </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" type="submit">Donate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/numscroller.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
   <script>
+  
+  
+  $( ".rotateIn" ).hover(function() {
+	$('.rotateIn').addClass('animated')
+	});
+
+jQuery(document).ready(function($){
+    $('.rotateIn').hover(
+         function(){ $(this).addClass('animated repan') },
+         function(){ $(this).removeClass('animated repan') }
+    )
+});
+
+
     $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 

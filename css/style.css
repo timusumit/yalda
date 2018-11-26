@@ -12,19 +12,25 @@ section.section-gap{
 	margin-top:90px;
 }
 
+
+.repan{
+	animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
 /*animation*/
 .delay2{
-	animation-duration: 4s;
+	animation-duration: 3s;
   animation-delay: 0.5s;
  /* animation-iteration-count: infinite;*/
 }
 .delay3{
-	animation-duration: 5s;
+	animation-duration: 4s;
   animation-delay: 0.5s;
  /* animation-iteration-count: infinite;*/
 }
 .delay4{
-	animation-duration: 6s;
+	animation-duration: 5s;
   animation-delay: 0.5s;
  /* animation-iteration-count: infinite;*/
 }
